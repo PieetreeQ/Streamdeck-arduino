@@ -1,0 +1,8 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "script",
+  "author": "",
+  "description": {"": "DIY Stream Deck - low-profile cases (Arduino Mega and Pro Micro) with RGB LED lid, chamfered, plus 15 degree stand."},
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}

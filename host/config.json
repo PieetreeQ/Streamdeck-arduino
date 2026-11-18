@@ -1,0 +1,76 @@
+{
+  "serial_port": "auto",
+  "baud": 115200,
+  "profile_key": 12,
+  "notify_on_profile_change": true,
+  "profiles": [
+    {
+      "name": "Printing",
+      "color": "#2060FF",
+      "keys": [
+        {"label": "Bambu Studio", "hint": "launch", "action": {"type": "open", "target": "C:\\Program Files\\Bambu Studio\\bambu-studio.exe"}},
+        {"label": "Import", "hint": "Ctrl+I", "action": {"type": "hotkey", "keys": ["ctrl", "i"], "focus": "Bambu Studio"}},
+        {"label": "Arrange", "hint": "A", "action": {"type": "key", "key": "a", "focus": "Bambu Studio"}},
+        {"label": "Lay flat", "hint": "F", "action": {"type": "key", "key": "f", "focus": "Bambu Studio"}},
+        {"label": "Cut", "hint": "C", "action": {"type": "key", "key": "c", "focus": "Bambu Studio"}},
+        {"label": "Slice", "hint": "Ctrl+R", "action": {"type": "hotkey", "keys": ["ctrl", "r"], "focus": "Bambu Studio"}},
+        {"label": "Duplicate", "hint": "Ctrl+C, Ctrl+V", "action": {"type": "sequence", "focus": "Bambu Studio", "steps": [{"type": "hotkey", "keys": ["ctrl", "c"]}, {"type": "hotkey", "keys": ["ctrl", "v"]}]}},
+        {"label": "Save", "hint": "Ctrl+S", "action": {"type": "hotkey", "keys": ["ctrl", "s"], "focus": "Bambu Studio"}},
+        {"label": "Undo", "hint": "Ctrl+Z", "action": {"type": "hotkey", "keys": ["ctrl", "z"], "focus": "Bambu Studio"}},
+        {"label": "MakerWorld", "hint": "browser", "action": {"type": "open", "target": "https://makerworld.com"}},
+        {"label": "STL folder", "hint": "explorer", "action": {"type": "open", "target": "%USERPROFILE%\\Downloads"}}
+      ]
+    },
+    {
+      "name": "Games",
+      "color": "#FF2020",
+      "keys": [
+        {"label": "Steam", "hint": "launch", "action": {"type": "open", "target": "steam://open/main"}},
+        {"label": "Discord", "hint": "launch", "action": {"type": "open", "target": "discord://"}},
+        {"label": "Mute mic", "hint": "Ctrl+Shift+M", "action": {"type": "hotkey", "keys": ["ctrl", "shift", "m"]}},
+        {"label": "Deafen", "hint": "Ctrl+Shift+D", "action": {"type": "hotkey", "keys": ["ctrl", "shift", "d"]}},
+        {"label": "Path of Exile 2", "hint": "Steam", "action": {"type": "open", "target": "steam://rungameid/2694490"}},
+        {"label": "Wallpaper Engine", "hint": "launch", "action": {"type": "open", "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\wallpaper64.exe"}},
+        {"label": "Game 3", "hint": "change ID", "action": {"type": "open", "target": "steam://rungameid/440"}},
+        {"label": "Record clip", "hint": "Win+Alt+G", "action": {"type": "hotkey", "keys": ["win", "alt", "g"]}},
+        {"label": "Game screenshot", "hint": "Win+Alt+PrtSc", "action": {"type": "hotkey", "keys": ["win", "alt", "printscreen"]}},
+        {"label": "Game Bar", "hint": "Win+G", "action": {"type": "hotkey", "keys": ["win", "g"]}},
+        {"label": "Volume up", "hint": "media", "action": {"type": "key", "key": "volumeup"}}
+      ]
+    },
+    {
+      "name": "Code",
+      "color": "#20FF40",
+      "keys": [
+        {"label": "VS Code", "hint": "launch", "action": {"type": "launch", "cmd": "code"}},
+        {"label": "Terminal", "hint": "launch", "action": {"type": "launch", "cmd": "wt"}},
+        {"label": "Git pull", "hint": "console", "action": {"type": "shell", "cmd": "git pull", "cwd": "%USERPROFILE%\\projects"}},
+        {"label": "Git status", "hint": "console", "action": {"type": "shell", "cmd": "git status", "cwd": "%USERPROFILE%\\projects"}},
+        {"label": "Run", "hint": "F5", "action": {"type": "key", "key": "f5"}},
+        {"label": "Breakpoint", "hint": "F9", "action": {"type": "key", "key": "f9"}},
+        {"label": "Save", "hint": "Ctrl+S", "action": {"type": "hotkey", "keys": ["ctrl", "s"]}},
+        {"label": "Search", "hint": "Ctrl+Shift+F", "action": {"type": "hotkey", "keys": ["ctrl", "shift", "f"]}},
+        {"label": "Undo", "hint": "Ctrl+Z", "action": {"type": "hotkey", "keys": ["ctrl", "z"]}},
+        {"label": "Copy", "hint": "Ctrl+C", "action": {"type": "hotkey", "keys": ["ctrl", "c"]}},
+        {"label": "Paste", "hint": "Ctrl+V", "action": {"type": "hotkey", "keys": ["ctrl", "v"]}}
+      ]
+    },
+    {
+      "name": "Media",
+      "color": "#A040FF",
+      "keys": [
+        {"label": "Previous", "hint": "media", "action": {"type": "key", "key": "prevtrack"}},
+        {"label": "Play/pause", "hint": "media", "action": {"type": "key", "key": "playpause"}},
+        {"label": "Next", "hint": "media", "action": {"type": "key", "key": "nexttrack"}},
+        {"label": "Volume up", "hint": "media", "action": {"type": "key", "key": "volumeup"}},
+        {"label": "Volume down", "hint": "media", "action": {"type": "key", "key": "volumedown"}},
+        {"label": "Mute", "hint": "media", "action": {"type": "key", "key": "volumemute"}},
+        {"label": "Spotify", "hint": "launch", "action": {"type": "open", "target": "spotify:"}},
+        {"label": "YouTube", "hint": "browser", "action": {"type": "open", "target": "https://youtube.com"}},
+        {"label": "Screenshot", "hint": "Win+Shift+S", "action": {"type": "hotkey", "keys": ["win", "shift", "s"]}},
+        {"label": "Calculator", "hint": "launch", "action": {"type": "launch", "cmd": "calc"}},
+        {"label": "Lock PC", "hint": "lock", "action": {"type": "launch", "cmd": "rundll32.exe user32.dll,LockWorkStation"}}
+      ]
+    }
+  ]
+}
